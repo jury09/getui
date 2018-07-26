@@ -1,0 +1,18 @@
+{
+    "name": "jury/getui",
+    "description": "php sdk for getui",
+    "authors": [
+        {
+            "name": "jury09",
+            "email": "jury09@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "getui\\": "src/"
+        }
+    }
+}
