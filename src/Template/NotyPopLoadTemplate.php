@@ -87,6 +87,9 @@ class NotyPopLoadTemplate extends BaseTemplate
     public $androidMark = "";
     public $iosMark = "";
     public $notifyStyle = 0;
+    public $isRing;
+    public $isVibrate;
+    public $isClearable;
 
     public function getActionChain()
     {
@@ -313,5 +316,20 @@ class NotyPopLoadTemplate extends BaseTemplate
         } else {
             $this->notifyStyle = 1;
         }
+    }
+
+    public function set_isRing($isRing)
+    {
+        $this->isRing = $isRing;
+    }
+
+    public function set_isVibrate($isVibrate)
+    {
+        $this->isVibrate = $isVibrate;
+    }
+
+    public function set_isClearable($isClearable)
+    {
+        $this->isClearable = $isClearable;
     }
 }

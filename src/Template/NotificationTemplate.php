@@ -21,7 +21,6 @@ class NotificationTemplate extends BaseTemplate
     public $isClearable;
     public $notifyStyle = 0;
 
-
     public function getActionChain()
     {
 
@@ -123,62 +122,62 @@ class NotificationTemplate extends BaseTemplate
         return $actionChains;
     }
 
-    function get_transmissionContent()
+    public function get_transmissionContent()
     {
         return $this->transmissionContent;
     }
 
-    function get_pushType()
+    public function get_pushType()
     {
         return 'NotifyMsg';
     }
 
-    function set_text($text)
+    public function set_text($text)
     {
         $this->text = $text;
     }
 
-    function set_title($title)
+    public function set_title($title)
     {
         $this->title = $title;
     }
 
-    function set_logo($logo)
+    public function set_logo($logo)
     {
         $this->logo = $logo;
     }
 
-    function set_logoURL($logoURL)
+    public function set_logoURL($logoURL)
     {
         $this->logoURL = $logoURL;
     }
 
-    function set_transmissionType($transmissionType)
+    public function set_transmissionType($transmissionType)
     {
         $this->transmissionType = $transmissionType;
     }
 
-    function set_isRing($isRing)
+    public function set_isRing($isRing)
     {
         $this->isRing = $isRing;
     }
 
-    function set_isVibrate($isVibrate)
+    public function set_isVibrate($isVibrate)
     {
         $this->isVibrate = $isVibrate;
     }
 
-    function set_isClearable($isClearable)
+    public function set_isClearable($isClearable)
     {
         $this->isClearable = $isClearable;
     }
 
-    function set_transmissionContent($transmissionContent)
+    public function set_transmissionContent($transmissionContent)
     {
         $this->transmissionContent = $transmissionContent;
     }
 
-    function set_notifyStyle($notifyStyle)
+    public function set_notifyStyle($notifyStyle)
     {
         if ($notifyStyle != 1) {
             $this->notifyStyle = 0;
