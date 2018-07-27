@@ -1,6 +1,8 @@
 {
     "name": "jury/getui",
     "description": "php sdk for getui",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "jury09",
@@ -10,6 +12,7 @@
     "require": {
         "php": ">=7.0.0"
     },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "getui\\": "src/"
